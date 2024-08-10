@@ -1,0 +1,580 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-top: 1vw;
+}
+
+.nav{
+    width: 100%;
+    height: 11vh;
+    margin-top: 3vw;
+    border-top: 0.15vw solid black;
+    border-bottom: 0.15vw solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav h2{
+    font-size: 1.3vw;
+    height: 100%;
+    width:20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 0.15vw solid black;
+    font-weight: 500;
+}
+
+.nav h1{
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-size: 3vw;
+    letter-spacing: -3px;
+    height: 100%;
+    width:20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav h2:nth-last-child(2){
+    width:29%;
+}
+
+.nav h2:nth-last-child(1){
+ width: 10%;
+}
+
+.nav h3{
+    display: none;
+}
+
+.center{
+    height: 90%;
+    width:100%;
+    padding:0.25vw;
+    margin: 0.25vw;
+}
+
+.content{
+    position: relative;
+    margin: 0.25vw;
+    height:100%;
+    width:98%;
+}
+.content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.overlay{
+    height:38%;
+    width: 93.3%;
+    /* background-color: red; */
+    position: absolute;
+    bottom: 0;
+    padding: 3vw;
+    color: #fff;
+}
+
+.over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+}
+.over1 h1{
+    font-family: "Paytone One", sans-serif;
+    font-size:3.6vw;
+}
+.over1 h2{
+    font-size:1vw;
+    padding:2vw 2.2vw;
+    border-radius: 50%;
+    border: solid 2px #fff;
+}
+
+.over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid  #fff;
+    padding: 0.5vw 0;
+}
+.over2 h3{
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+
+.over2 i{
+    height: 3vw;
+    font-size: 2vw;
+}
+.scroll{
+    height:45vh;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+.container{
+    padding: 2vw 0;
+    display: inline-block;
+    height: 100%;
+    width: 110%;
+    animation-name: anime;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+}
+.scroll img{
+    height:80%;
+    width: 15%;
+    margin: 1vw;
+    padding: 2px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@keyframes anime{
+    from{
+        transform: translateX(0);
+    }
+
+    to{
+        transform: translate(-100%);
+    }
+}
+
+.alphabet{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 100%;
+    gap: 1.2vw;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    background-origin: padding-box;
+}
+
+.alphabet h5{
+    border-bottom: 2px solid #000;
+    font-weight: 400;
+    font-size:1.7vw;
+    font-style: italic;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.alphabet h6{
+    font-weight: 400;
+    font-size:1vw;
+    font-style: italic;
+    text-transform: uppercase;
+    padding: 0.5vw 0.7vw;
+    border-radius: 50%;
+    border: 1px solid #00000000;
+    margin-right: 1vh;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.alphabet h6:hover{
+    border: 1px solid #000000;
+}
+
+.page2{
+    height: 100%;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 5vw;
+}
+
+.page2-part1{
+    height: 100%;
+    width: 45%;
+    background-image: url(https://images.unsplash.com/photo-1618355281911-84e6ec751d84?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); 
+    background-size: cover;
+    background-position: center;
+}
+
+.page2-part2{
+    height: 100%;
+    width: 45%;
+}
+
+.page2-part2 img{
+    width: 100%;
+    object-fit: cover;
+    height: 60%;
+}
+
+.page2-part2 .text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text h3{
+    font-size: 23px;
+    padding-top:10px;
+    height: 10vw;
+    width: 15vw;
+    line-height:25px;
+}
+
+.text p{
+    font-size: 13px;
+    height: 8vw;
+    width: 20vw;
+}
+
+.page3{
+    height: 100%;
+    width: 90%;
+    /* background-color: red; */
+    position: relative;
+    padding: 5vw 3vw;
+}
+
+.page3>h1{
+    margin-bottom: 3vh;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3vw;
+    font-family: "Paytone One", sans-serif;
+}
+
+.element{
+    height: 16vh;
+    width: 100%;
+    border-top:2px solid black ;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    object-fit: cover;
+    object-position: top;
+    position: relative;
+}
+.element img{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    border-radius: 50%;
+    left: 30%;
+    opacity: 0;
+    transition: all ease-in 0.7s;
+}
+
+.element:nth-last-child(1){
+    border-bottom: 2px solid black;
+}
+    
+.element>h4{
+    width:6%;
+    text-transform: uppercase;
+    font-size: 1vw;
+    font-weight: 500;
+    /* background-color:red ; */
+}
+     
+.element .elem-part1{
+    width: 50%;
+}
+.elem-part1>h1{
+    font-size: 2.7vw;
+    font-weight: 500;
+}
+
+.elem-part1>h5{
+    font-size: 0.8vw;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.element:hover img{
+    opacity: 1;
+    height: 110px;
+    width: 110px;
+    border: #000 solid 1px;
+}
+
+.page4{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page4-elem1{
+    height: 100%;
+    width: 45%;
+    background-image: url(https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+}
+.page4-elem2{
+    /* position: absolute; */
+    height: 100%;
+    width: 45%;
+    /* background-color: red; */
+}
+.page4-elem2 .img{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.page4-elem2 .img img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.page4-elem2 .text h2{
+    padding-bottom:50px;
+    font-size: 60px;
+    font-family:"Paytone One", sans-serif ;
+}
+
+.page4-elem2 .text h3{
+    line-height: 28px;
+    font-weight: 600;
+    width: 350px;
+    height: 100px;
+}
+.page4-elem2 .text p{
+    font-size: 15px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    height: 90%;
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+
+.marque{
+    margin-top: 50px;
+    margin-bottom: 150px;
+    padding: 0.5vw;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+.marque h1{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 3vw;
+    font-weight: 600;
+    -webkit-text-stroke: 2px #252525b7;
+    color: transparent;
+    font-family: "Paytone One", sans-serif;
+    margin-right: 16px;
+    animation-name: movement;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes movement {
+    from{
+       transform: translateX(0); 
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
+@media (max-width:600px) {
+    body{
+        overflow-x:hidden;
+    }
+    .nav{
+        height: 8vh;
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+    
+    .nav h2{
+        display: none;
+    }
+    
+    .nav h1{
+        font-size: 26px;
+        justify-content: flex-start;
+    }
+
+    .nav h2:nth-last-child(2){
+        display: none;
+    }
+
+    .nav h2:nth-last-child(1){
+     display: none;
+    }
+
+    .nav h3{
+        display: block;
+        padding: 1vw;
+        margin: 10px;
+    }
+
+    .center{
+        height: 40%;
+    }
+    .overlay{
+        height:30%;
+    }
+    
+    .over1{
+        margin-bottom: 1vw;
+    }
+    .over1 h1{
+        font-size:4.6vw;
+    }
+    .over1 h2{
+        font-size:3.6vw;
+        padding:1.4vw 1.2vw;
+    }
+
+    .over2 h3{
+        font-size: 2.3vw;
+    }
+    
+    .over2 i{
+        height: 3vw;
+        font-size: 4vw;
+    }
+    .scroll{
+        height:15vh;
+        width: 110%;    
+    }
+    .alphabet{
+        height: 5vh;
+        gap: 0.30vw;
+    }
+    
+    .alphabet h5{
+        font-size:1vw;
+    }
+    .alphabet h6{
+        font-size:0.70vw;
+        padding: 0.30vw 0.27vw;
+    }
+    .page2{
+        height: 60%;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 1vw 4vw;
+    }
+    
+    .page2-part1{
+        height: 90%;
+        width: 53%;
+    }
+    .page2-part2 img{
+        height: 30%;
+    }
+    
+    .text h3{
+        font-size: 2.8vw;
+        padding-top:5px;
+        width: 100%;
+        height: 10vw;
+        line-height:12px;
+    }
+    
+    .text p{
+        font-size: 2vw;
+        height: 8vw;
+        width: 20vw;
+    }
+
+    .page3{
+        height: 60%;
+        width: 90%;
+        padding: 1vw 1vw;
+    }
+    
+    .element{
+        height: 12vh;
+        width: 100%;
+    }
+    .element img{    
+        left: 20%;
+    } 
+    .element:hover img{
+        height: 18vw;
+        width: 18vw;
+    }
+    .page4{
+        height: 50%;
+        width: 100%;
+    }
+    
+    .page4-elem2{
+        height: 100%;
+        width: 53%;
+    }
+    
+    .page4-elem2 .img img{
+        margin: 3px;
+        width: 110px;
+        height: 110px;
+    }
+    
+    .page4-elem2 .text h2{
+        padding-bottom:10px;
+        font-size: 30px;
+    }
+    
+    .page4-elem2 .text h3{
+        line-height: 18px;
+        height: 60px;
+    }
+    .page4-elem2 .text p{
+        font-size: 10px;
+        padding-bottom: 6px;
+    }
+    .marque{
+        margin-top: 30px;
+        padding: 3vw;
+        height: 4vh;
+        width: 100%;
+    }
+    .marque h1{
+        letter-spacing: 2px;
+        font-size: 7vw;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
